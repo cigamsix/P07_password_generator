@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <h1 id="header-top">Generate a</h1>
+        <h1 style="color: #4adf86">random password</h1>
+        <h5>Never use an insecure password again.</h5>
+        <h3 id="char-h3"></h3>
+        <p id="all-char-para">all characters used</p>
+        <button id="generate-pass-btn">Generate passwords</button>
+        &nbsp;&nbsp;&nbsp;
+        <input
+          type="range"
+          id="units"
+          name="units"
+          min="15"
+          max="30"
+          value="1"
+          step="1"
+        />
+        &nbsp;&nbsp;&nbsp;
+        <span id="password-length">15</span> characters
+      </div>
+
+      <div class="container-hr">
+        <hr />
+      </div>
+
+      <div class="container-button">
+        <div id="container-first-button">
+          <button
+            onclick="copyPasswordFirst()"
+            class="get-pass-btn"
+            id="pass-first-btn"
+          ></button>
+          <p id="pass-first-para"></p>
+        </div>
+
+        <div id="container-second-button">
+          <button
+            onclick="copyPasswordSecond()"
+            class="get-pass-btn"
+            id="pass-second-btn"
+          ></button>
+          <p id="pass-second-para"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
